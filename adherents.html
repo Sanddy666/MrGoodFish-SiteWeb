@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <title>Mr. GoodFish</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" id="navbar">Recherche</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index2.html">Acceuil<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="MrGoodFish.html">Recherche <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link " href="adherents.html">Recherche d'adhérents <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <nav class="navbar col-md-12 active">
+        <a href="index2.html"><img src="logo_mrgoodfish_2019.svg" id="iphonemr" width="50%" height="50%" align="left"></a>
+
+        <a href="index2.html" class="btn btn-outline-light btn-lg">Acceuil</a>
+        <a href="#" class="btn btn-outline-light btn-lg">Application</a>
+        <a href="MrGoodFish.html" class="btn btn-outline-light btn-lg">Recherche</a>
+        <a href="#" class="btn btn-outline-light btn-lg">Contact</a>
+        <a href="adherents.html" class="btn btn-outline-light btn-lg">Adhérents</a>
+        <a href="fichespoissions.html" class="btn btn-outline-light btn-lg">Fiches de poissons</a>
+        <a href="ListDeRecettes.html" class="btn btn-outline-light btn-lg">Liste de recettes</a>
+    </nav>
+
+</header>
+<div class="container">
+    <div class="">
+        <div class="form-group">
+            <label for="motCle" class=""><h3>Mot Clé:</h3></label>
+            <input type="text" class="form-control" id="motCle">
+        </div>
+
+        <div class="form-group">
+            <h3>Type d'adhérents</h3>
+            <select name="type_d'adherents" id="adherents" class="form-control">
+                <option value="">Selectionner</option>
+                <option value="1">Armateur</option>
+                <option value="2">Association</option>
+                <option value="3">Etablissement scolaire</option>
+                <option value="4">Grossiste mareyeur</option>
+                <option value="5">Poissonnier</option>
+                <option value="6">Producteur</option>
+                <option value="7">Restaurant d'entreprises</option>
+                <option value="8">Restaurateur</option>
+                <option value="9">Traiteur</option>
+                <option value="10">Transformateur</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Région</h3>
+            <select name="region" id="region" class="form-control">
+                <option value="">Selectionner</option>
+                <option value="1">Alsace</option>
+                <option value="2">Aquitaine</option>
+                <option value="3">Auvergne</option>
+                <option value="4">Auvergne-Rhône-Alpes</option>
+                <option value="5">Basse Normandie</option>
+                <option value="6">Bourgogne</option>
+                <option value="7">Bourgogne Franche-Comté</option>
+                <option value="8">Bretagne</option>
+                <option value="9">Centre</option>
+                <option value="10">Centre Val de Loire</option>
+                <option value="11">Champagne-Ardenne</option>
+                <option value="12">Franche-Comté</option>
+                <option value="13">Grand Est</option>
+                <option value="14">Grand Sud Ouest</option>
+                <option value="15">Haute Normandie</option>
+                <option value="16">Hauts de France</option>
+                <option value="17">Hauts de Seine</option>
+                <option value="18">Ile-de-France</option>
+                <option value="19">Languedoc-Roussillon</option>
+                <option value="20">Limousin</option>
+                <option value="21">Lorraine</option>
+                <option value="22">Midi-Pyrénées</option>
+                <option value="23">Normandie</option>
+                <option value="24">Nouvelle Aquitaine</option>
+                <option value="25">Occitanie</option>
+                <option value="26">PACA</option>
+                <option value="27">Pays de la Loire</option>
+                <option value="28">Poitou-Charentes</option>
+                <option value="29">Rhône-Alpes</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Départements</h3>
+            <select name="departements" id="departements" class="form-control">
+                <option value="">Selectionner</option>
+                <option value="1">Ain (01)</option>
+                <option value="1">Aisne (02)</option>
+                <option value="1">Allier (03)</option>
+                <option value="1">Alpes de Haute Provence (04)</option>
+                <option value="1">Alpes-Maritimes (06)</option>
+                <option value="1">Ardèche (07)</option>
+                <option value="1">Ardennes (08)</option>
+                <option value="1">Aube (10)</option>
+                <option value="1">Aude (11)</option>
+                <option value="1">Aveyron (12)</option>
+                <option value="1">Bas-Rhin (67)</option>
+                <option value="1">Bouches-du-Rhône (13)</option>
+                <option value="1">Calvados (14)</option>
+                <option value="1">Cantal (15)</option>
+                <option value="1">Charente (16)</option>
+                <option value="1">Charente Maritime (17)</option>
+                <option value="1">Cher (18)</option>
+                <option value="1">Corrèze (19)</option>
+                <option value="1">Côte-d'Or (21)</option>
+                <option value="1">Côtes-d'Armor (22)</option>
+                <option value="1">Dordogne (24)</option>
+                <option value="1">Doubs (25)</option>
+                <option value="1">Drôme (26)</option>
+                <option value="1">Essonne (91)</option>
+                <option value="1">Eure (27)</option>
+                <option value="1">Eure-et-Loir (28)</option>
+                <option value="1">Finistère (29)</option>
+                <option value="1">Gard (30)</option>
+                <option value="1">Gironde (33)</option>
+                <option value="1">Haut-Rhin (68)</option>
+                <option value="1">Haute Loire (43)</option>
+                <option value="1">Haute Saône (70)</option>
+                <option value="1">Haute-Garonne (31)</option>
+                <option value="1">Haute-Savoie (74)</option>
+                <option value="1">Haute-Vienne (87)</option>
+                <option value="1">Hautes-Pyrénées (65)</option>
+                <option value="1">Hauts-de-Seine (92)</option>
+                <option value="1">Hérault (34)</option>
+                <option value="1">Ille et Vilaine (35)</option>
+                <option value="1">Indre (36)</option>
+                <option value="1">Indre-et-Loire (37)</option>
+                <option value="1">Isère (38)</option>
+                <option value="1">Landes (40)</option>
+                <option value="1">Loir-et-Cher (41)</option>
+                <option value="1">Loire (42)</option>
+                <option value="1">Loire Atlantique (44)</option>
+                <option value="1">Loiret (45)</option>
+                <option value="1">Lot-et-Garonne (47)</option>
+                <option value="1">Maine-et-Loire (49)</option>
+                <option value="1">Manche (50)</option>
+                <option value="1">Marne (51)</option>
+                <option value="1">Mayenne (53)</option>
+                <option value="1">Meurthe-et-Moselle (54)</option>
+                <option value="1">Meuse (55)</option>
+                <option value="1">Morbihan (56)</option>
+                <option value="1">Moselle (57)</option>
+                <option value="1">Nord (59)</option>
+                <option value="1">Oise (60)</option>
+                <option value="1">Paris (75)</option>
+                <option value="1">Pas de Calais (62)</option>
+                <option value="1">Puy-de-Dôme (63)</option>
+                <option value="1">Pyrénées-Atlantiques (64)</option>
+                <option value="1">Pyrénées-Orientales (66)</option>
+                <option value="1">Rhône (69)</option>
+                <option value="1">Saône-et-Loire (71)</option>
+                <option value="1">Sarthe (72)</option>
+                <option value="1">Savoie (73)</option>
+                <option value="1">Seine (75)</option>
+                <option value="1">Seine Maritime (76)</option>
+                <option value="1">Seine-et-Marne (77)</option>
+                <option value="1">Seine-Saint-Denis (93)</option>
+                <option value="1">Somme (80)</option>
+                <option value="1">Tarn (81)</option>
+                <option value="1">Tarn et Garonne (82)</option>
+                <option value="1">Territoire de Belfort (90)</option>
+                <option value="1">Territoire de Belfort (90)</option>
+                <option value="1">Val-d'Oise (95)</option>
+                <option value="1">Val-de-Marne (94)</option>
+                <option value="1">Var (83)</option>
+                <option value="1">Vars (83)</option>
+                <option value="1">Vaucluse (84)</option>
+                <option value="1">Vendée (85)</option>
+                <option value="1">Vienne (86)</option>
+                <option value="1">Vosges (88)</option>
+                <option value="1">Yonne (89)</option>
+                <option value="1">Yvelines (78)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Pays</h3>
+            <select name="pays" id="pays" class="form-control">
+
+                <option value="">Selectionner</option>
+                <option value="1">Belgique</option>
+                <option value="2">France</option>
+                <option value="3">Luxembourg</option>
+                <option value="4">Monaco</option>
+
+            </select>
+        </div>
+
+        <button class="btn btn-outline-primary form-group col-md-12">Rechercher</button>
+
+    </div>
+
+
+    <div class="container-lg">
+
+        <h3>Quelques adhérents de votre region</h3>
+        <select name="tri" id="tri" class="col-3 form-control float-right">
+
+            <option value="">Trier par</option>
+            <option value="1">Popularité</option>
+            <option value="2">Budget</option>
+            <option value="3">Distance</option>
+            <option value="4">Type</option>
+
+        </select><br><br><br>
+
+        <div class="row form-group">
+            <div class="col-6">
+                <div class="card form-group">
+                    <div class="card-body">
+                        <div class="card-title"><h3>adhérent X</h3></div>
+                        <div>
+                            <img src="https://via.placeholder.com/400x200" alt="Image de l'adhérent X"
+                                 class="form-group img-fluid">
+                        </div>
+                        <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                            architecto aspernatur blanditiis commodi deleniti dicta dolor dolore, ea eius harum illo
+                            impedit inventore iste minima nostrum quis repudiandae temporibus ut?
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 form-group">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title"><h3>adhérent Y</h3></div>
+                        <div>
+                            <img src="https://via.placeholder.com/400x200" alt="Image de l'adhérent Y"
+                                 class="form-group img-fluid">
+                        </div>
+                        <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                            aliquid cumque dolore dolorem eius, facilis fugiat hic illo illum laboriosam minima neque
+                            obcaecati possimus quae reiciendis rem rerum ut voluptate.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 form-group">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title"><h3>adhérent X</h3></div>
+                        <div>
+                            <img src="https://via.placeholder.com/400x200" alt="Image de l'adhérent X"
+                                 class="form-group img-fluid">
+                        </div>
+                        <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores
+                            autem dolorum magnam necessitatibus, non nostrum obcaecati temporibus! Asperiores blanditiis
+                            consequatur cupiditate doloribus minus odit quas quibusdam quos sint ullam.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 form-group">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title"><h3>adhérent Y</h3></div>
+                        <div>
+                            <img src="https://via.placeholder.com/400x200" alt="Image de l'adhérent Y"
+                                 class="form-group img-fluid">
+                        </div>
+                        <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus
+                            animi aspernatur commodi cupiditate, excepturi facilis hic in incidunt, iste laborum nam
+                            quam quidem tenetur ullam veniam veritatis? Doloremque, maxime.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<footer>
+    <div>
+        <nav class="navbar col-md-12 active">
+
+            <a href="index2.html" class="btn btn-outline-light ">Acceuil</a>
+            <a href="#" class="btn btn-outline-light ">Application</a>
+            <a href="#" class="btn btn-outline-light ">Contact</a>
+            <a href="#" class="btn btn-outline-light ">Mentions légales</a>
+        </nav>
+    </div>
+
+</footer>
+
+</body>
+</html>
